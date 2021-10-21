@@ -2,6 +2,8 @@
 
 Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC).
 
+In this tutorial, you will create and initialize infrastructure using Terraform.
+
 ## Prerequisites
 
 * The appropriate [Terraform package](https://www.terraform.io/downloads.html) installed.
