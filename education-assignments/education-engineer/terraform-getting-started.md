@@ -2,18 +2,21 @@
 
 Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC).
 
-To install Terraform, simply visit [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file deliverable for your platform, machine or environment on which you like to run code and do development.
+## Prerequisites
 
-With Terraform installed, let's dive right into it and start creating some infrastructure.
+* The appropriate [Terraform package](https://www.terraform.io/downloads.html) installed.
 
-Most guys find it easiest to create a new directory on there local machine and create Terraform configuration code inside it.
+
+## Creating Infrastructure
+
+We recommend creating a new directory on your local machine and creating Terraform configuration code inside it.
 
 ```shell
 $ mkdir terraform-demo
 $ cd terraform-demo
 ```
 
-Next, create a file for your Terraform configuration code.
+Create a file for your Terraform configuration code.
 
 ```shell
 $ touch main.tf
@@ -45,13 +48,15 @@ resource "docker_image" "nginx" {
 }
 ```
 
+## Initializing Terrform
+
 Initialize Terraform with the `init` command. The AWS provider will be installed. 
 
 ```shell
 $ terraform init
 ```
 
-You shoud check for any errors. If it ran successfully, provision the resource with the `apply` command.
+Check for any errors. If it ran successfully, provision the resource with the `apply` command.
 
 ```shell
 $ terraform apply
@@ -59,10 +64,22 @@ $ terraform apply
 
 The command will take up to a few minutes to run and will display a message indicating that the resource was created.
 
-Finally, destroy the infrastructure.
+## Destroying the Infrastructure
+
+Destroy the infrastructure.
 
 ```shell
 $ terraform destroy
 ```
 
-Look for a message are the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+
+## Next Steps
+
+In this tutorial, you began creating infrastucture using Terraform.
+
+Review the following resources to learn more about getting started with Terraform.
+
+* [Introduction to Infrastructure as Code with Terraform](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/certification-associate-tutorials)
+
+* [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/certification-associate-tutorials)
