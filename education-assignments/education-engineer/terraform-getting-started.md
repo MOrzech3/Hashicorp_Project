@@ -7,6 +7,7 @@ In this tutorial, you will create and initialize infrastructure using Terraform.
 ## Prerequisites
 
 * The appropriate [Terraform package](https://www.terraform.io/downloads.html) installed.
+* [Docker](https://www.docker.com/products/docker-desktop) installed.
 
 
 ## Creating Infrastructure
