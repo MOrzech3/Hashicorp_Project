@@ -198,7 +198,17 @@ Destroy the infrastructure.
 $ terraform destroy
 ```
 
-Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+Look for a message at the bottom of the output asking for confirmation. 
+
+```shell
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: 
+  ```
+
+Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
 
 ## Next Steps
 
